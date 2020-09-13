@@ -1,0 +1,16 @@
+{
+  "name": "web-sugars",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Usagi Ito <the@usagi.network>",
+  "license": "MIT",
+  "devDependencies": {
+    "wasm-pack": "^0.9.1"
+  },
+  "scripts": {
+    "c": "cargo check --target wasm32-unknown-unknown",
+    "b": "wasm-pack build --dev",
+    "t": "wasm-pack test --chrome --firefox --headless",
+    "tb": "wasm-pack test --chrome --firefox"
+  }
+}
